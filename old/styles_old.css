@@ -1,0 +1,58 @@
+/* CSS VARIABLES */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+/* normalizing our css */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root{
+    --main-color: purple;
+    --second-color: #008000;
+    --thrid-color: peru;
+    --default-size: 17px;
+    --default-font:'Montserrat', sans-serif;
+
+}
+
+
+body{
+    background-color: var(--thrid-color);
+    font-family: var(--default-font);
+
+}
+
+.parent-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 400px;
+    align-items: center;
+    background-color: red;
+}
+
+@media (max-width:600px) {
+    .parent-container{
+        flex-direction: column;
+    }
+    
+}
+
+.box1,.box2,.box3{
+    padding:4rem;
+    margin: 2rem;;
+}
+
+.box1{
+    background-color: aqua;
+}
+
+.box2{
+    background-color: blueviolet;
+}
+
+.box3{
+    background-color: darksalmon;
+}
